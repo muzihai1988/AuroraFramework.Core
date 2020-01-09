@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.API", "AuroraFramework.Core.API\AuroraFramework.Core.API.csproj", "{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18E7A569-9776-495F-8E9D-1E061428CB25}
+	EndGlobalSection
+EndGlobal
