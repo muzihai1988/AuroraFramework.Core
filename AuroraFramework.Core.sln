@@ -5,6 +5,18 @@ VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.API", "AuroraFramework.Core.API\AuroraFramework.Core.API.csproj", "{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.Common", "AuroraFramework.Core.Common\AuroraFramework.Core.Common.csproj", "{B9EA97FB-10F6-458E-94DB-6DF96E3B63DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.IServices", "AuroraFramework.Core.IServices\AuroraFramework.Core.IServices.csproj", "{6C750FDE-3D73-44A4-8F03-5854F3AADF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.Services", "AuroraFramework.Core.Services\AuroraFramework.Core.Services.csproj", "{53E5088F-D017-4C8C-8419-636B17BFAF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.IRepository", "AuroraFramework.Core.IRepository\AuroraFramework.Core.IRepository.csproj", "{798D9A8B-4BCF-41B0-806E-598A92CFDB18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.Repository", "AuroraFramework.Core.Repository\AuroraFramework.Core.Repository.csproj", "{A258EF61-8E17-4019-B0DE-511BAC5BDD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuroraFramework.Core.Model", "AuroraFramework.Core.Model\AuroraFramework.Core.Model.csproj", "{C622E28B-DEAE-4C87-8A01-AA9CF3658347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E3BE8D-34C6-497B-AF3D-302A7EDF14E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EA97FB-10F6-458E-94DB-6DF96E3B63DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EA97FB-10F6-458E-94DB-6DF96E3B63DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EA97FB-10F6-458E-94DB-6DF96E3B63DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EA97FB-10F6-458E-94DB-6DF96E3B63DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C750FDE-3D73-44A4-8F03-5854F3AADF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C750FDE-3D73-44A4-8F03-5854F3AADF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C750FDE-3D73-44A4-8F03-5854F3AADF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C750FDE-3D73-44A4-8F03-5854F3AADF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E5088F-D017-4C8C-8419-636B17BFAF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E5088F-D017-4C8C-8419-636B17BFAF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E5088F-D017-4C8C-8419-636B17BFAF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E5088F-D017-4C8C-8419-636B17BFAF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798D9A8B-4BCF-41B0-806E-598A92CFDB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798D9A8B-4BCF-41B0-806E-598A92CFDB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798D9A8B-4BCF-41B0-806E-598A92CFDB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798D9A8B-4BCF-41B0-806E-598A92CFDB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A258EF61-8E17-4019-B0DE-511BAC5BDD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A258EF61-8E17-4019-B0DE-511BAC5BDD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A258EF61-8E17-4019-B0DE-511BAC5BDD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A258EF61-8E17-4019-B0DE-511BAC5BDD71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C622E28B-DEAE-4C87-8A01-AA9CF3658347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C622E28B-DEAE-4C87-8A01-AA9CF3658347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C622E28B-DEAE-4C87-8A01-AA9CF3658347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C622E28B-DEAE-4C87-8A01-AA9CF3658347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
