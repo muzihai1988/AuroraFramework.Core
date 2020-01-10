@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AuroraFramework.Core.IRepository\AuroraFramework.Core.IRepository.csproj" />
+    <ProjectReference Include="..\AuroraFramework.Core.Model\AuroraFramework.Core.Model.csproj" />
+  </ItemGroup>
+
 </Project>
