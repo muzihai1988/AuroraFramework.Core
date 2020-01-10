@@ -7,8 +7,11 @@ using Microsoft.Extensions.Logging;
 
 namespace AuroraFramework.Core.API.Controllers
 {
+    /// <summary>
+    /// 天气管理接口
+    /// </summary>
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]")]    
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -22,7 +25,10 @@ namespace AuroraFramework.Core.API.Controllers
         {
             _logger = logger;
         }
-
+        /// <summary>
+        /// 获取天气情况
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

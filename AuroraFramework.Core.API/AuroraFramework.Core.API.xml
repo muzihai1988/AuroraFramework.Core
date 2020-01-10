@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuroraFramework.Core.API</name>
+    </assembly>
+    <members>
+        <member name="T:AuroraFramework.Core.API.Controllers.WeatherForecastController">
+            <summary>
+            天气管理接口
+            </summary>
+        </member>
+        <member name="M:AuroraFramework.Core.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取天气情况
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
