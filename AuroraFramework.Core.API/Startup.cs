@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using AuroraFramework.Core.API.Extensions;
+using Autofac;
+using Autofac.Extras.DynamicProxy;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +34,11 @@ namespace AuroraFramework.Core.API
             services.AddControllers();
 
             var basePath = ApplicationEnvironment.ApplicationBasePath;
+
+            services.UseSqlSugarExtension();
+
+            #region Swagger
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("V1", new OpenApiInfo
@@ -45,6 +54,28 @@ namespace AuroraFramework.Core.API
                 var xmlPath = Path.Combine(basePath, "AuroraFramework.Core.API.xml");
                 c.IncludeXmlComments(xmlPath, true);
             });
+            #endregion
+        }
+
+        /// <summary>
+        /// Autofac“¿¿µ◊¢»Î
+        /// </summary>
+        /// <param name="builder"></param>
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            var basePath = ApplicationEnvironment.ApplicationBasePath;
+
+            var servicesDllFile = Path.Combine(basePath, "AuroraFramework.Core.Services.dll");
+            var assemblyServices = Assembly.LoadFrom(servicesDllFile);
+
+            builder.RegisterAssemblyTypes(assemblyServices)
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope()
+                .EnableInterfaceInterceptors();
+
+            var repositoryDllFile = Path.Combine(basePath, "AuroraFramework.Core.Repository.dll");
+            var assemblysRepository = Assembly.LoadFrom(repositoryDllFile);
+            builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

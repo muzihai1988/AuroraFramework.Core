@@ -15,5 +15,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:AuroraFramework.Core.API.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            Autofac依赖注入
+            </summary>
+            <param name="builder"></param>
+        </member>
     </members>
 </doc>

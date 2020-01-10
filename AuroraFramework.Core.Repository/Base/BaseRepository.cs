@@ -24,14 +24,14 @@ namespace AuroraFramework.Core.Repository.Base
                 //{
                 //    _dbBase.ChangeDatabase("1");
                 //}
-                _dbBase = new SqlSugarClient(new ConnectionConfig()
-                {
-                    ConnectionString = ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString,
-                    DbType = DbType.SqlServer,
-                    InitKeyType = InitKeyType.Attribute,//从特性读取主键和自增列信息
-                    IsAutoCloseConnection = true,//开启自动释放模式和EF原理一样我就不多解释了
-                    IsShardSameThread = true//设为true相同线程是同一个SqlConnection
-                });
+                //_dbBase = new SqlSugarClient(new ConnectionConfig()
+                //{
+                //    ConnectionString = ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString,
+                //    DbType = DbType.SqlServer,
+                //    InitKeyType = InitKeyType.Attribute,//从特性读取主键和自增列信息
+                //    IsAutoCloseConnection = true,//开启自动释放模式和EF原理一样我就不多解释了
+                //    IsShardSameThread = true//设为true相同线程是同一个SqlConnection
+                //});
                 return _dbBase;
             }
         }

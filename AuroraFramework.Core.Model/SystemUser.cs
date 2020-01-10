@@ -1,12 +1,15 @@
-﻿using System;
+﻿using SqlSugar;
+using System;
 
 namespace AuroraFramework.Core.Model
 {
+    [SugarTable("tb_SystemUser")]
     public class SystemUser
     {
         /// <summary>
         /// 用户编号
         /// </summary>
+        [SugarColumn(IsPrimaryKey = true)]
         public string UserID { get; set; }
 
         /// <summary>
