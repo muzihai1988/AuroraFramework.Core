@@ -25,9 +25,5 @@
     <ProjectReference Include="..\AuroraFramework.Core.IServices\AuroraFramework.Core.IServices.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
 
 </Project>
